@@ -1,0 +1,32 @@
+.background-body{
+    background-color: #000000;  
+}
+
+.menu-item{
+    font-size: large;
+}
+
+/*CSS HOME*/
+
+.produto{
+    color: white;
+}
+
+@media(max-width:1100px){
+    .capa_logo{
+        width: 300px;
+    }
+}
+
+.button-spotfy{
+    background-color: #1db954;
+}
+
+.artistas{
+    color: white;
+    font-weight: bold;
+}
+
+.aling-content{
+    text-align: center!important;
+}

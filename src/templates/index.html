@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A5Records-Inicio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{url_for('static', filename='css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='css/bootstrap/icons-1.6.1/font/bootstrap-icons.css')}}" rel="stylesheet">
+
+  <link href="{{url_for('static', filename='css/base.css')}}" rel="stylesheet">
+  <link rel="icon" href="{{url_for('static', filename='images/A5Records-logo.png')}}" sizes="32x32" type="image/png">
+  <meta name="theme-color" content="#7952b3">
+
+</head>
+
+<body class="background-body">
+
+  <header class="p-3 bg-dark text-white">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+      <div class="container-fluid justify-content-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav m-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link active menu-item" aria-current="page" href="/inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item" href="artistas">Artistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="aling-content py-5">
+
+    <img src="{{url_for('static', filename='/images/logo/capa_a5.png')}}" alt="Banner com logo A5 Records" class="capa_logo">
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-6">
+          <iframe src="https://giphy.com/embed/jUDegiyw84wDMAOHfb" width="140" height="140" class="rounded-circle">
+          </iframe>
+
+          <h2 class="produto">Gravação</h2>
+          <p  class="produto">Gravação multipista analógica com os melhores equipamentos do mercado.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <iframe src="https://giphy.com/embed/jUDegiyw84wDMAOHfb" width="140" height="140" class="rounded-circle">
+          </iframe>
+      
+          <h2 class="produto">Mixagem</h2>
+          <p  class="produto">Traga seu projeto para nosso estúdio para mixagem e masterização com os melhores plugins de mercado</p>          
+        </div>
+      </div>
+
+  </main>
+  <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+</body>
+</html>
