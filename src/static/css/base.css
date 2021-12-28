@@ -6,7 +6,7 @@
     font-size: large;
 }
 
-/*CSS HOME*/
+/*CSS INICIO*/
 
 .produto{
     color: white;
@@ -18,15 +18,19 @@
     }
 }
 
-.button-spotfy{
-    background-color: #1db954;
+/*CSS PRODUÇÕES*/
+
+@media(max-width: 600px){
+    .imagem_artista{
+        width: 250px;
+    }
 }
 
-.artistas{
-    color: white;
-    font-weight: bold;
+.texto_sobre{
+    text-align: justify;
+    font-size: 1.5rem;
 }
 
-.aling-content{
-    text-align: center!important;
+.beatplace{
+    color: #1e2f9b;
 }
