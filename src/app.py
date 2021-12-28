@@ -11,7 +11,7 @@ def home():
 def inicio():
     return render_template('index.html')
 
-@app.route('/artistas')
-def artistas():
-    return render_template('artistas.html')
+@app.route('/producoes')
+def producoes():
+    return render_template('producoes.html')
 
