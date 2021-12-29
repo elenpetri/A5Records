@@ -31,6 +31,10 @@
     font-size: 1.5rem;
 }
 
+.texto_sobre_1{
+    text-align: justify;
+}
+
 .beatplace{
     color: #1e2f9b;
 }
