@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A5Records-Inicio</title>
+  <!-- Bootstrap core CSS -->
+  <link href="{{url_for('static', filename='css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='css/bootstrap/icons-1.6.1/font/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='css/base.css')}}" rel="stylesheet">
+  <link rel="icon" href="{{url_for('static', filename='images/logo/A5Records-logo.png')}}" sizes="32x32" type="image/png">
+  <meta name="theme-color" content="#7952b3">
+
+</head>
+
+<body class="background-body">
+  <header class="p-3 bg-dark text-white">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+      <div class="container-fluid">
+        <img class="bi me-2" width="78" height="70" role="img"
+          src="{{url_for('static', filename='images/logo/A5Records-logo.png')}}" alt="A5Records">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+          aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+          <ul class="navbar-nav m-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link  menu-item" href="/inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item active" aria-current="page" href="#x">Produções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-item">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container py-4">  
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Limão Beats</h1>
+          
+          <div class="row">
+            <span class="col-lg-3 col-12 me-0 text-center pb-3">
+              <img src="{{url_for('static', filename='/images/artistas/limao.png')}}" alt="Beat Maker Tiago Lima, conhecido como Limão Beats" class="imagem_artista">
+            </span>
+
+            <span class="col">
+              <p class="texto_sobre p-lg-5">Thiago Lima, produtor e Beat Maker conhecido como Limão Beats, formado pela academia de beats do Dj Coala, faz parte da equipe de beatmakers da Beat Gangconta e hoje com mais de 2k em plays na plataforma <a href="https://www.beatplace.co/limaobeats" target="blank" class="beatplace">Beatplace.</a></p>
+            </span>
+          </div>
+
+          <div>
+            <iframe src="https://open.spotify.com/embed/track/6nqE638Hy2t1xmWwqtjrjr?utm_source=generator&theme=0" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+          <a href="https://www.instagram.com/limaobeats/" target="blank"><img src="{{url_for('static', filename='//images/icons/instagram.ico')}}" alt="Ícone instagram" title="Instagram"></a>
+          <a href="https://www.facebook.com/thiago.lima.1829" target="blank"><img src="{{url_for('static', filename='//images/icons/facebook.ico')}}" alt="Ícone facebook" title="Facebook"></a>
+          <a href="https://www.youtube.com/channel/UCnD48dUhA8sUfhEydWd4SZg" target="blank"><img src="{{url_for('static', filename='//images/icons/youtube.ico')}}" alt="Ícone facebook" title="Youtube"></a>
+
+          
+        </div>
+      </div>
+  
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-white bg-dark rounded-3">
+            <h2>Change the background</h2>
+            <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+            <div>
+              <iframe src="https://open.spotify.com/embed/track/5xQId98VQZqlIV175v0zSx?utm_source=generator&theme=0" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+            <button class="btn btn-outline-light" type="button">Example button</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>Add borders</h2>
+            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+            <button class="btn btn-outline-secondary" type="button">Example button</button>
+          </div>
+        </div>
+      </div>
+  
+      <footer class="pt-3 mt-4 text-muted border-top">
+        © 2021
+      </footer>
+    </div>
+  </main>
+
+ 
+  <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+</body>
+
+</html>
