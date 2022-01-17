@@ -38,3 +38,10 @@
 .beatplace{
     color: #1e2f9b;
 }
+
+/*CSS SOBRE*/
+@media(max-width: 600px){
+    .image_home_studio{
+        width: 540px;
+    }
+}
