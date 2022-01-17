@@ -15,3 +15,7 @@ def inicio():
 def producoes():
     return render_template('producoes.html')
 
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
+
