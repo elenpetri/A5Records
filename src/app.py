@@ -19,9 +19,6 @@ def producoes():
 def sobre():
     return render_template('sobre.html', pagina_selecionada = 'sobre')
 
-print(f'rodando script com {__name__}')
-port = int(os.environ.get("PORT", 5000))
-print(f'na porta {port}')
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=port, debug=True)
+    app.run('0.0.0.0')
