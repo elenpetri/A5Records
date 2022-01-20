@@ -20,5 +20,4 @@ def sobre():
     return render_template('sobre.html', pagina_selecionada = 'sobre')
 
 
-if __name__ == '__main__':
-    flaskapp.run('0.0.0.0')
+flaskapp.run('0.0.0.0')
