@@ -1,4 +1,3 @@
-import os
 from flask import Flask, render_template
 
 flaskapp = Flask(__name__)
@@ -20,4 +19,5 @@ def sobre():
     return render_template('sobre.html', pagina_selecionada = 'sobre')
 
 
-flaskapp.run('0.0.0.0')
+if __name__ == '__main__':
+    flaskapp.run('0.0.0.0')
