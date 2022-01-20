@@ -41,7 +41,10 @@
 
 /*CSS SOBRE*/
 @media(max-width: 600px){
-    .image_home_studio{
-        width: 540px;
+    .imagem_home_studio{
+        width: 350px;
+    }
+    .texto_imagem{
+        width: 375px;
     }
 }
