@@ -1,23 +1,117 @@
 {% extends 'base.html' %}
 
+{% block title %}
+<title>Sobre</title>
+{% endblock %}
+
 {% block conteudo%}
-<main>
-    <div class="align-items-body pt-5">
         <div class="my-auto flex-wrap g-0  d-flex justify-content-around">
-            <div class="d-flex flex-wrap justify-content-around no-padding-small">
-                <div class="col d-flex justify-content-center">
-                    <img class="imagem_home_studio" src="../static/images/logo/home_studio.jpg"
-                        alt="Imagem da A5 Records Home Studio">
+            <div class="d-flex flex-wrap justify-content-around p-3 no-padding-small">
+                <div class="col d-flex mb-3 col-lg-3 col-12 justify-content-around">
+                    <img class="imagem2 py-2" src="../static/imagens/imagem_autora_2.png" alt="Imagem da autora">
                 </div>
-                
-                <div class="my-auto flex-wrap g-0  d-flex justify-content-around">
+                <div class="col row no-padding-small d-flex mx-3">
+                    <div class="info-sobre no-padding-small justify-content">
+                        <h1 id="sobre" class="px-lg-2 mx-3 no-padding-small">Sobre mim</h1>
+
+                        <p class="info-sobre px-lg-2 row mx-4  no-padding-small">
+                            <span>
+                                Jacareiense de {{idade}} anos, cresci e estudei na minha
+                                cidade natal. <br>
+                                                           Toda a minha experiência profissional é voltada para o atendimento ao público, contudo
+                                na
+                                pandemia comecei a me interessar pela área de tecnologia e resolvi fazer a transição de carreira. Hoje sou estudante de Desenvolvimento de Software
+                                Multiplataforma na Faculdade de Tecnologia de São José dos Campos (Fatec) e quanto mais eu aprendo mais tenho a certeza de que quero seguir carreira
+                                como desenvolvedora front end.
+                                Já tenho alguns projetos que podem ser acessados no meu perfil do <a href="https://github.com/elenpetri" target="_blank" title="Perfil Github"><i class="bi bi-github"></i>Github</a>, fique à vontade para fazer uma visitinha!
+                            </span>
+                        </p>
+                    </div>
+                 
                     <div class="d-flex flex-wrap justify-content-around no-padding-small">
-                        <div class="imagem-home col d-flex justify-content-center">
-                            <img class="texto_imagem" src="../static/images/logo/sobre_nos.png"
-                                alt="Imagem com texto sobre a A5 Records">
+                        <div class="row no-padding-small ">
+                            <div>
+                                <h2 id="infos-educacionais" class="no-padding-small p-2 mx-lg-3">Informações
+                                    educacionais</h2>
+                            </div>
+                            <div>
+                                <span class="col no-padding-small px-lg-3 py-2">                                 
+                                    <h3 id="fac1" class="mx-4"> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                            <path fill-rule="evenodd" d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                          </svg> Faculdade de Tecnologia de São José dos
+                                        Campos
+                                        <br>
+                                        Prof Jessen Vidal -
+                                        Fatec SJC
+                                    </h3>
+                                    <p class="cursotempo mx-4">DESENVOLVIMENTO DE SOFTWARE
+                                        MULTIPLATAFORMA, 2021 A 2024</p>
+                                    <div class="descricaocurso pb-3 mx-4">
+                                        <li>Cursando o primeiro semestre.</li>
+                                    
+                                        <li>
+                                            Aprendendo: Design Digital, Desenvolvimento Web, Engenharia
+                                            de Software e Banco de Dados.
+                                        </li>
+                                        <li>Aprendizagem por Projetos Integrados: Desenvolvimento de
+                                            aplicação web onde os docentes e discentes possam ver as informações de forma seletiva e controlada, sendo eles
+                                            avisos gerais ou específicos dos cursos. As principais tecnoligias que estão sendo utilizadas para o
+                                            desenvolvimento são: HTML5, CSS3, Javascript, Flask, MySql, Git e Github.                                            
+                                        </li>
+                                    </div>
+                                    <h3 id="cursoemvideo" class="mx-4"> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                            <path fill-rule="evenodd" d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                        </svg>
+                                         Certificação HTML5 e CSS3
+                                        <br>
+                                        Curso em Vídeo
+                                    </h3>
+                                    <p class="cursotempo mx-4" class="mx-4">Módulo 2 de 5</p>
+                                    <div class="descricaocurso pb-3 mx-4">   
+                                        <li>
+                                            Em andamento - 80% concluído.
+                                        </li>                               
+                                        <li>
+                                            <b>Introdução ao CSS3:</b> Estudos das cores (psicologia das cores, representatividade das cores com CSS3, harmonia de cores, paleta de cores); 
+                                            Fundamentos básicos da tipografia (fonte, letra e família), Seletores de personalizados, modelo de caixas, responsividade para sites.
+                                        </li>                             
+                                    </div> 
+
+                                    <p class="cursotempo mx-4">Módulo 1 de 5</p>
+                                    <div class="descricaocurso pb-3 mx-4">   
+                                        <li>
+                                            Concluído - <a href="https://www.cursoemvideo.com/validacao-de-certificado/?codigo=FC86-C9E9-1" target="blank" title="Certificação de conclusão do módulo 1 de HTML5 e CSS3">Acesse a  certificação aqui</a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16" >
+                                                <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"></path>
+                                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"></path>
+                                            </svg>
+                                        </li>                               
+                                        <li>
+                                           <b>HTML5:</b> Coneitos básicos,  semântica do HTML5; formatação de textos, hierarquias de títulos, listas, Links e âncoras, imagens audios e vídeos.
+                                        </li>
+                                        <b>Introdução ao CSS3:</b> Estilos CSS: inline, internos e externos.    
+                                    </div> 
+                                    
+                                    <h3 id="ens_med" class="mx-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                        <path fill-rule="evenodd" d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                      </svg>
+                                      Escola de Ensino Médio
+                                        <br>
+                                        E.E. Cel. Carlos Porto
+                                    </h3>
+                                    <p class="cursotempo mx-4">ENSINO MÉDIO, TURMA DE 2011</p>
+                                </span>   
+                            </div>
                         </div>
+
                     </div>
                 </div>
+                <div class="col d-flex mb-3 col-lg-1 col-12 justify-content-around"></div>
             </div>
-</main>
+        </div>
 {% endblock %}

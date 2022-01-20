@@ -1,23 +1,26 @@
-from flask import Flask, render_template
+from flask import Flask, app, render_template
+from datetime import date
 
-flaskapp = Flask(__name__)
+app = Flask(__name__)
 
-@flaskapp.route('/')
+@app.route('/')
 def home():
-    return inicio()
-
-@flaskapp.route('/inicio')
-def inicio():
     return render_template('index.html', pagina_selecionada = 'inicio')
 
-@flaskapp.route('/producoes')
-def producoes():
-    return render_template('producoes.html', pagina_selecionada = 'producoes')
-
-@flaskapp.route('/sobre')
+@app.route('/sobre')
 def sobre():
-    return render_template('sobre.html', pagina_selecionada = 'sobre')
+    idade = calcularIdade(date(1994,1,24))
+    return render_template('sobre.html', idade = idade, pagina_selecionada = 'sobre')
+
+@app.route('/projetos')
+def projetos():
+    return render_template('projetos.html', pagina_selecionada = 'projetos')    
+
+def calcularIdade(dataAniversario):
+    hoje = date.today()
+    idade = hoje.year - dataAniversario.year - ((hoje.month, hoje.day) < (dataAniversario.month, dataAniversario.day))
+    return idade
 
 
 if __name__ == '__main__':
-    flaskapp.run('0.0.0.0')
+    app.run('0.0.0.0')

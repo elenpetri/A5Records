@@ -1,0 +1,8 @@
+@charset "UTF-8";
+:root{
+    --corprimary: #e8857f;/*Cor principal da paleta*/
+    --corbgfundo: #fbe1db42;/*cor do background*/
+    --corbgmenu: #923747;/*Cor de fundo do menu*/
+    ----cortxt: #FDE3DD; /*cor dos textos do menu e do footer*/
+    --cortxtbtn: #fff;
+}

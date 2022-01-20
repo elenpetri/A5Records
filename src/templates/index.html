@@ -1,33 +1,28 @@
 {% extends 'base.html' %}
 
 {% block conteudo%}
-<main class="text-center py-5">
-  <img src="{{url_for('static', filename='/images/logo/capa_a5.png')}}" alt="Banner com logo A5 Records"
-    class="capa_logo">
-
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-6">
-        <iframe src="https://giphy.com/embed/jUDegiyw84wDMAOHfb" width="140" height="140" class="rounded-circle"
-          title="Gif animado">
-        </iframe>
-
-        <h2 class="produto">Gravação</h2>
-        <p class="produto"><strong>Texto modelo</strong> Gravação multipista analógica com os melhores equipamentos do
-          mercado.</p>
-      </div>
-
-      <div class="col-lg-6">
-        <iframe src="https://giphy.com/embed/jUDegiyw84wDMAOHfb" width="140" height="140" class="rounded-circle"
-          title="Gif animado">
-        </iframe>
-
-        <h2 class="produto">Mixagem</h2>
-        <p class="produto"> <strong>Texto modelo</strong> Traga seu projeto para nosso estúdio para mixagem e
-          masterização com os melhores plugins de mercado</p>
-      </div>
+<div class="align-items-body">
+    <div class="my-auto flex-wrap g-0  d-flex justify-content-around">
+        <div class="d-flex flex-wrap justify-content-around no-padding-small">
+            <div class="imagem-home col d-flex justify-content-center">
+                <img class="imagem1" src="../static/imagens/imagem_autora_1.png" alt="Imagem da autora">
+            </div>
+            <div class="col row no-padding-small d-flex">
+                <div class=" texto row no-padding-small justify-content-center text-center">
+                    <h1 id="nome" class="no-padding-small">Élen Petri</h1>
+                    <h2 id="texto" class="no-padding-small">Estudante de Desenvolvimento de Software Multiplataforma
+                    </h2>
+                    <span id="redes_sociais" class="no-padding-small pb-3">
+                        <button type="button" title="Linkedin">
+                            <a href="https://www.linkedin.com/in/elen-petri/" target="_blank">LINKEDIN</a>
+                        </button>
+                        <button type="button">
+                            <a href="https://github.com/elenpetri" target="_blank" title="GitHub">GITHUB</a>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
-</main>
+</div>
 {% endblock %}

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import "../css/cores.css";
+
+@font-face {
+    font-family: 'Rustling' ;
+    src: url('../fontes/Rustling\ Sound.ttf') format('truetype');
+}
+
+/*Header*/
+#cabecalho{
+    background-color: var(--corprimary);
+}
+
+/*logo*/
+#logo{   
+    margin: 0 1rem;
+    padding: 5px; 
+}
+
+/*menu*/
+#menu a{
+    color: var(----cortxt);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    font-size: large;
+}
+
+/*Coloca cor de fundo e sublinhado no menu da página atual*/
+.nav-pills .nav-link.active.menu-item-color, .nav-pills .show>.nav-link.menu-item-color{
+    background-color: var(--corbgmenu);
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+}
+
+/*Remover o sublinhado do link*/
+footer a:link{ 
+    text-decoration: none;
+}
+
+@media (max-width: 600px){
+    #logo{
+        display: block;
+        width: 50%;
+        padding: 5px;
+    }
+
+   #menu a {
+     padding: 1rem 1rem;
+   }
+}
+
+/*Footer*/
+#footer{
+    background-color: var(--corprimary);
+    text-align: center;
+}
+
+#footer .text {
+    color: var(----cortxt);
+    font-family: 'Rustling' ;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 750px){
+    #footer{
+        position: relative;
+    }
+}
+
+@media (min-width: 750px){
+    #footer{
+        position: fixed;
+    }
+}
+
+

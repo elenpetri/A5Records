@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import "../css/cores.css";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+.align-items-body{/*alinha os itens no meio da tela*/
+    padding: 5%;
+    margin: auto;
+    padding-bottom: 2px;
+}
+
+#corpo{ /*Cor de fundo*/
+    background-color: var(--corbgfundo);
+    min-width: 375px;
+}
+
+#texto, #redes_sociais, ::after, ::before {/*Alinhamento do texto e botões do corpo*/
+    box-sizing: unset;
+}
+
+/*CSS Home*/
+#nome{
+    font-size: 50px;
+    color: var(--corprimary);
+    font-family: 'Playfair Display', serif;
+}
+
+#texto {
+    width: 466px;
+}
+
+/*estilização do botão*/
+
+#redes_sociais button,#redes_sociais button a:visited{ /*a:visited = para não mostrar a cor azul quando clicado*/
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--corprimary);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--corbgmenu);
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    box-shadow: 2px 2px #b3b1b1;
+}
+
+#redes_sociais button a{ /*a:visited = para não mostrar a cor azul sem ter clicado*/
+    color: var(--corprimary);   
+}
+    
+/*efeito botão*/
+#redes_sociais button:hover, #redes_sociais button:hover > a:visited, #redes_sociais button:hover > a{ 
+    background-color: var(--corprimary);
+    color: var(--cortxtbtn);
+}
+
+@media (max-width: 750px){
+    .imagem-home{
+        height: 50%;
+    }
+    .imagem1{
+        height: 90%;
+    } 
+    .no-padding-small {
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+    }
+
+    #nome{
+        font-size: xx-large;
+    }
+
+    .texto{
+        margin: 0%;
+    }
+
+    #texto{
+        width: 340px;
+        font-size: larger;
+        padding-bottom: 1rem;
+    }
+} 
+
+/*=====================================================================================================*/
+/*CSS Sobre*/
+
+#corpo-sobre{ /*Cor de fundo*/
+    background-color: var(--corbgfundo);
+    min-width: 375px;
+}
+
+.imagem2{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.imagem2:hover{
+   filter:opacity(0.70);
+   transform: scale(1.1);/*10% de zoom na imagem*/
+}
+
+.info-sobre{
+    text-align: justify;
+}
+
+#sobre, #infos-educacionais, #conhecimento{
+    color: var(--corprimary);
+}
+
+#ens_med, #fac1, #cursoemvideo{
+    font-size: 1.5rem;
+    color: var(--corprimary);
+    text-align: justify;
+}
+.cursotempo{
+    font-weight: bold;
+}
+
+.descricaocurso{
+    text-align: justify;
+}
+.topicos{
+    font-weight: bold;
+}
+
+a{
+    color: var(--corprimary);
+    font-weight: bold;
+}
+
+a:hover{
+    color: var(--corbgmenu);
+    font-weight: bold;
+}
+
+@media (max-width: 750px){
+    #sobre, #infos-educacionais, #conhecimento{
+        text-align: center!important;
+    }
+} 
+
+
+
+/*=====================================================================================================*/
+ /*CSS Projetos*/
+
+ .img-projeto{
+    width:250px;
+    height: 250px;
+    filter:opacity(0.70);
+ }
+
+.img-projeto:hover{
+    filter:none;
+    transform: scale(1.1);/*10% de zoom na imagem*/
+}
+
+ #titulo{
+    font-size: 40px;
+    color: var(--corprimary);
+    text-align: center;
+}
+
+#projeto1, #projeto2, #projeto3{
+    color: var(--corprimary);
+}
+
+.descricaoprojeto > p {
+    text-align: justify;
+}
+
+.bi-star-half, .bi-star-fill{ /*Cor da estrela em status*/
+    color: var(--corprimary);
+}
+
+
+/*estilização do botão*/
+
+.projeto button.botao_saibamais a:visited, .projeto button.botao_saibamais{ /*a:visited = para não mostrar a cor azul quando clicado*/
+    font-size: auto;
+    font-weight: bold;
+    color: var(--corprimary);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--corbgmenu);
+    border-radius: 10px;
+    width: auto;
+    padding: 10px;
+    box-shadow: 2px 2px #b3b1b1;
+}
+
+.projeto button.botao_saibamais a{ /*a:visited = para não mostrar a cor azul sem ter clicado*/
+    color: var(--corprimary);
+}
+    
+/*efeito botão*/
+.projeto button.botao_saibamais:hover, .projeto button.botao_saibamais:hover > a:visited, .projeto button.botao_saibamais:hover > a { 
+    background-color: var(--corprimary);
+    color: var(--cortxtbtn);
+}
+
+@media(max-width:800px){
+    #projeto1, #projeto2, #projeto3{
+        text-align: center;
+    }
+    .img-projeto{
+        filter: none;
+        transform: none !important;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+#saibamais{
+    max-width: 30%;
+    color: var(--corbgmenu);
+    background-color: #92374729;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#saibamais > p{
+    font-size: smaller;
+}
+
+
