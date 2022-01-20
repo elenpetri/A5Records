@@ -1,105 +1,33 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'base.html' %}
 
-<head>
+{% block conteudo%}
+<main class="text-center py-5">
+  <img src="{{url_for('static', filename='/images/logo/capa_a5.png')}}" alt="Banner com logo A5 Records"
+    class="capa_logo">
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="container marketing">
 
-  <title>A5Records-Inicio</title>
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-6">
+        <iframe src="https://giphy.com/embed/jUDegiyw84wDMAOHfb" width="140" height="140" class="rounded-circle"
+          title="Gif animado">
+        </iframe>
 
-  <!-- Bootstrap core CSS -->
-  <link href="{{url_for('static', filename='css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{url_for('static', filename='css/bootstrap/icons-1.6.1/font/bootstrap-icons.css')}}" rel="stylesheet">
-
-  <link href="{{url_for('static', filename='css/base.css')}}" rel="stylesheet">
-  <link rel="icon" href="{{url_for('static', filename='images/logo/A5Records-logo.png')}}" sizes="32x32"
-    type="image/png">
-  <meta name="theme-color" content="#7952b3">
-
-</head>
-
-<body class="background_body">
-
-  <header class="p-3 bg-dark text-white">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
-      <div class="container-fluid justify-content-end">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-          aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav m-auto mb-2 mb-sm-0">
-            <li class="nav-item">
-              <a class="nav-link active menu_item" aria-current="page" href="/inicio">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu_item" href="/producoes">Produções</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu_item">Eventos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu_item" href="/sobre">Sobre Nós</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="text-center py-5">
-
-    <img src="{{url_for('static', filename='/images/logo/capa_a5.png')}}" alt="Banner com logo A5 Records"
-      class="capa_logo">
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-6">
-          <iframe src="https://giphy.com/embed/jUDegiyw84wDMAOHfb" width="140" height="140" class="rounded-circle"
-            title="Gif animado">
-          </iframe>
-
-          <h2 class="produto">Gravação</h2>
-          <p class="produto"><strong>Texto modelo</strong> Gravação multipista analógica com os melhores equipamentos do
-            mercado.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <iframe src="https://giphy.com/embed/jUDegiyw84wDMAOHfb" width="140" height="140" class="rounded-circle"
-            title="Gif animado">
-          </iframe>
-
-          <h2 class="produto">Mixagem</h2>
-          <p class="produto"> <strong>Texto modelo</strong> Traga seu projeto para nosso estúdio para mixagem e
-            masterização com os melhores plugins de mercado</p>
-        </div>
+        <h2 class="produto">Gravação</h2>
+        <p class="produto"><strong>Texto modelo</strong> Gravação multipista analógica com os melhores equipamentos do
+          mercado.</p>
       </div>
 
-      <div class="container">
-        <footer class="border-top my-5 fixed">
-          <div class="col-12 text-start ps-2">
-            <h3 class="text-white">Contate-nos</h3>
-            <ul class="list-unstyled">
-              <li><a class="social_media" href="#"><i class="bi bi-instagram" width="36" height="36"> @A5records<use
-                      xlink:href="https://www.instagram.com/a5records/"></use></i>
-              <li><a class="social_media" href="#"><i class="bi bi-youtube" width="36" height="36"> A5 RECORDS<use
-                      xlink:href="https://www.youtube.com/channel/UC5b7pAM0vQTFvSGHPFvzc2A"></use></i>
-              <li><a class="social_media" href="#"><i class="bi bi-at" width="36" height="36"> a5filmes@gmail.com<use
-                      xlink:href="a5filmes@gmail.com"></use></i>
-              <li><a class="social_media" href="#"><i class="bi bi-whatsapp" width="24" height="24"> (12)99127-3909<use
-                      xlink:href="a5filmes@gmail.com"></use></i>
-            </ul>
-          </div>
-        </footer>
+      <div class="col-lg-6">
+        <iframe src="https://giphy.com/embed/jUDegiyw84wDMAOHfb" width="140" height="140" class="rounded-circle"
+          title="Gif animado">
+        </iframe>
+
+        <h2 class="produto">Mixagem</h2>
+        <p class="produto"> <strong>Texto modelo</strong> Traga seu projeto para nosso estúdio para mixagem e
+          masterização com os melhores plugins de mercado</p>
       </div>
-  </main>
-
-  <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
-</body>
-
-</html>
+    </div>
+</main>
+{% endblock %}

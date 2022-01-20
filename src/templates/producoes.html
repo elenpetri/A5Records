@@ -1,54 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'base.html' %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A5Records-Inicio</title>
-  <!-- Bootstrap core CSS -->
-  <link href="{{url_for('static', filename='css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{url_for('static', filename='css/bootstrap/icons-1.6.1/font/bootstrap-icons.css')}}" rel="stylesheet">
-  <link href="{{url_for('static', filename='css/base.css')}}" rel="stylesheet">
-  <link rel="icon" href="{{url_for('static', filename='images/logo/A5Records-logo.png')}}" sizes="32x32" type="image/png">
-  <meta name="theme-color" content="#7952b3">
-
-</head>
-
-<body class="background_body">
-  <header class="p-3 bg-dark text-white">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
-      <div class="container-fluid">
-        <img class="bi me-2" width="78" height="70" role="img"
-          src="{{url_for('static', filename='images/logo/A5Records-logo.png')}}" alt="A5Records">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
-          aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample03">
-          <ul class="navbar-nav m-auto mb-2 mb-sm-0">
-            <li class="nav-item">
-              <a class="nav-link  menu_item" href="/inicio">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu_item active" aria-current="page" href="#x">Produções</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu_item">Eventos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu_item" href="/sobre">Sobre Nós</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu_item">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
+{% block conteudo%}
   <main>
     <div class="container py-4">  
       <div class="p-1 mb-4 bg-light rounded-3">
@@ -109,12 +61,6 @@
         </div>-->
       </div>
   
-      <footer class="pt-3 mt-4 text-muted border-top"></footer>
     </div>
   </main>
-
- 
-  <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
-</body>
-
-</html>
+{% endblock %}

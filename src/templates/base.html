@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}
+    <title>A5Records-Inicio</title>
+    {% endblock title %}
+
+    {% block css %}
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename='css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/bootstrap/icons-1.6.1/font/bootstrap-icons.css')}}" rel="stylesheet">
+
+    <link href="{{url_for('static', filename='css/base.css')}}" rel="stylesheet">
+    <link rel="icon" href="{{url_for('static', filename='images/logo/A5Records-logo.png')}}" sizes="32x32"
+        type="image/png">
+    <meta name="theme-color" content="#7952b3">
+    {% endblock css %}
+</head>
+
+<body class="background_body">
+    
+    {% block menu %}
+    <header class="p-3 bg-dark text-white">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+            <div class="container-fluid">
+                <img class="bi me-2" width="78" height="70" role="img"
+                    src="{{url_for('static', filename='images/logo/A5Records-logo.png')}}" alt="A5Records">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav m-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            {% if pagina_selecionada == 'inicio' %}
+                            <a class="nav-link  menu_item active" href="/">Início</a>
+                            {% else %}
+                            <a class="nav-link menu_item" href="/inicio">Início</a>
+                            {% endif%}
+                        </li>
+
+                        <li class="nav-item">
+                            {% if pagina_selecionada == 'producoes' %}
+                            <a class="nav-link menu_item active" aria-current="page" href="/producoes">Produções</a>
+                            {% else %}
+                            <a class="nav-link menu_item" aria-current="page" href="/producoes">Produções</a>
+                            {% endif%}
+                        </li>
+
+                        <li class="nav-item">
+                            {% if pagina_selecionada == 'eventos' %}
+                            <a class="nav-link menu_item">Eventos</a>
+                            {% else %}
+                            <a class="nav-link menu_item">Eventos</a>
+                            {% endif%}
+                        </li>
+
+                        <li class="nav-item">
+                            {% if pagina_selecionada == 'sobre' %}
+                            <a class="nav-link menu_item" href="/sobre">Sobre Nós</a>
+                            {% else %}
+                            <a class="nav-link menu_item" href="/sobre">Sobre Nós</a>
+                            {% endif%}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {% endblock menu %}
+
+    {% block conteudo %}
+    {% endblock %}
+
+    {% block footer %}
+    <div class="container">
+        <footer class="border-top my-5 fixed">
+            <div class="col-12 text-start ps-2">
+                <h3 class="text-white">Contate-nos</h3>
+                <ul class="list-unstyled">
+                    <li><a class="social_media" href="#"><i class="bi bi-instagram" width="36" height="36">
+                                @A5records<use xlink:href="https://www.instagram.com/a5records/"></use></i>
+                    <li><a class="social_media" href="#"><i class="bi bi-youtube" width="36" height="36"> A5
+                                RECORDS<use xlink:href="https://www.youtube.com/channel/UC5b7pAM0vQTFvSGHPFvzc2A"></use>
+                            </i>
+                    <li><a class="social_media" href="#"><i class="bi bi-at" width="36" height="36">
+                                a5filmes@gmail.com<use xlink:href="a5filmes@gmail.com"></use></i>
+                    <li><a class="social_media" href="#"><i class="bi bi-whatsapp" width="24" height="24">
+                                (12)99127-3909<use xlink:href="a5filmes@gmail.com"></use></i>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    {% endblock footer %}
+
+    {% block js%}
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    {% endblock js%}
+
+</body>
+</html>
