@@ -1,21 +1,21 @@
 import os
-from flask import Flask, app, render_template
+from flask import Flask, render_template
 
 flaskapp = Flask(__name__)
 
-@app.route('/')
+@flaskapp.route('/')
 def home():
     return inicio()
 
-@app.route('/inicio')
+@flaskapp.route('/inicio')
 def inicio():
     return render_template('index.html', pagina_selecionada = 'inicio')
 
-@app.route('/producoes')
+@flaskapp.route('/producoes')
 def producoes():
     return render_template('producoes.html', pagina_selecionada = 'producoes')
 
-@app.route('/sobre')
+@flaskapp.route('/sobre')
 def sobre():
     return render_template('sobre.html', pagina_selecionada = 'sobre')
 
