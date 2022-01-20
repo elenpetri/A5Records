@@ -19,4 +19,5 @@ def sobre():
     return render_template('sobre.html', pagina_selecionada = 'sobre')
 
 
-app.run('0.0.0.0')
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
