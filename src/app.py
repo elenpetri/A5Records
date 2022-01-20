@@ -1,7 +1,7 @@
 import os
 from flask import Flask, app, render_template
 
-app = Flask(__name__)
+flaskapp = Flask(__name__)
 
 @app.route('/')
 def home():
@@ -21,4 +21,4 @@ def sobre():
 
 
 if __name__ == '__main__':
-    app.run('0.0.0.0')
+    flaskapp.run('0.0.0.0')
